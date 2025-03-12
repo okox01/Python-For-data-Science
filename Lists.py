@@ -124,9 +124,9 @@ print(l3)
 print(l4)
 
 #***split()***
-a="sami".split(" ")
+a="sami".split()
 print(a)
-b="a,b,c,d,e".split(',') #split by comma
+b="a,b,c,d,e".split(',') #split by comma [delimeter]
 print(b)
 
 
