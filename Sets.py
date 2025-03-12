@@ -81,10 +81,12 @@ a={1,2}
 b={1,2,3,4}
 print(b.issuperset(a))
 
+
 #***Looping through sets***
 my_set={1,2,3,4}
 for i in my_set:
     print(i)
+
 
 #***Set Comprehension***
 squared_numbers={x:x**2 for x in range(5)}
@@ -94,5 +96,5 @@ print(squared_numbers)
 #***Frozenset***
 #Frozenset is an immutable set object, meaning it cannot be changed after creation
 my_frozenset=frozenset([1,2,3,4,5])
-my_frozenset.remove(6)
+# my_frozenset.remove(6)
 print(my_frozenset)
