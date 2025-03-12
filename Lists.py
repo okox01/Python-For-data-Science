@@ -105,7 +105,28 @@ print(list3)
 list1.remove(2)
 print(list1)
 
-list3.discard()
+#***Copy and Clone Lists***
+#Method:1-> copy()
+list2=[4,5,6,77]
+list3=list2.copy()
 print(list3)
+#Method:2-> Clone
+l1=[4,5,6,9]
+l2=l1 #referencing to the same list
+l1[0]="sami"
+print(l1)
+print(l2)
+
+l3=[5,8,9,10]
+l4=l3[:] # referencing to the different addresses
+l3[0]="sayed"
+print(l3)
+print(l4)
+
+#***split()***
+a="sami".split(" ")
+print(a)
+b="a,b,c,d,e".split(',') #split by comma
+print(b)
 
 
