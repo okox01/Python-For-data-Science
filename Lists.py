@@ -10,9 +10,12 @@ nested_list=[1,2,[3,4,5],(5,9,"sami")]
 print(nested_list)
 
 #***Accessing elements***
-#Method:1-> by index
+#Method:1-> by index [positive index]
 p=[1,2,[3,4,5],(5,9,"sami")]
 print(p[3][2])
+#Method:2-> by index [negative index]
+n=[1,2,[3,4,5],(5,9,"sami")]
+print(p[-1]) #(5, 9, 'sami')  shows the last element
 
 #***Modifying List***
 #Method:1-> direct modification
@@ -81,8 +84,18 @@ list1.pop(2) #pop the element at index 2
 print(list1) 
 list1.pop()
 print(list1)#pop the last element
-
-
+#Method:5-> insert()
+fruits=["apple","Banana","cherry"]
+fruits.insert(1,"date") #insert "date" at index 1
+print(fruits) #output: ["apple", "date", "Banana", "cherry"]
+#Method:5-> index()
+list1=["apple","Banana","cherry"]
+index=list1.index("cherry") #find the index of "cherry"
+print(index) # 2
+#Method:6-> count()
+list1=["apple","Banana","cherry","apple","apple"]
+p=list1.count("apple")
+print(p)
 #***List Slicing***
     #l[start:end:jump]
     #start:from which index to start
@@ -104,7 +117,10 @@ print(list3)
 #Method:3-> using remove()
 list1.remove(2)
 print(list1)
-
+#Method:4-> using clear()
+fruits=["apple","banana","cherry","date"]
+fruits.clear()
+print(fruits)
 #***Copy and Clone Lists***
 #Method:1-> copy()
 list2=[4,5,6,77]
