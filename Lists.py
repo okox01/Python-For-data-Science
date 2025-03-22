@@ -94,8 +94,8 @@ index=list1.index("cherry") #find the index of "cherry"
 print(index) # 2
 #Method:6-> count()
 list1=["apple","Banana","cherry","apple","apple"]
-p=list1.count("apple")
-print(p)
+p=list1.count("apple") #count the number of "apple"
+print(p) #3
 #***List Slicing***
     #l[start:end:jump]
     #start:from which index to start
@@ -119,8 +119,8 @@ list1.remove(2)
 print(list1)
 #Method:4-> using clear()
 fruits=["apple","banana","cherry","date"]
-fruits.clear()
-print(fruits)
+fruits.clear() #removes all the elements from the list 
+print(fruits) #[]
 #***Copy and Clone Lists***
 #Method:1-> copy()
 list2=[4,5,6,77]
